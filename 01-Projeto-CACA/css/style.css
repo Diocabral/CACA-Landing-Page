@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 5%; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.idioma {
+    font-weight: bold;
+    color: #005F99;
+    font-size: 14px;
+}
+
+.idioma a {
+    text-decoration: none; 
+    color: #555;           
+    transition: color 0.3s;
+}
+
+.idioma a:hover {
+    color: #005F99;      
+}
+
+.idioma .ativo {
+    color: #005F99;        
+    border-bottom: 2px solid #005F99; 
+}
+
+.logo {
+    color: #005F99;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+}
+
+.hero {
+    height: 600px;
+    background-image: linear-gradient(90deg, rgba(0,95,153,0.9) 0%, rgba(0,95,153,0.1) 100%), url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+}
+
+.hero-conteudo {
+    max-width: 1000x;
+    color: white;
+
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-top: -100px;
+    margin-bottom: 120px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 0.6);
+
+}
+
+.hero p {
+    max-width: 700px;
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 1.2;
+    opacity: 0.9;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 0.6);
+
+}
+
+.cartoes-wrapper {
+    display: flex;           
+    justify-content: center;  
+    gap: 150px;             
+    margin-top: 100px;       
+    margin-bottom: 80px; 
+}
+
+.cartao {
+    background-color: white;  
+    padding: 40px;            
+    border-radius: 8px;      
+    text-align: center;     
+    width: 300px;         
+    height: 400px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.6); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.cartao:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); 
+    cursor: pointer;
+
+}
+
+.cartao img {
+    height: 80px;          
+    margin-bottom: 35px;     
+}
+
+.cartao h3 {
+    color: #005F99;  
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.cartao p {
+    color: #555; 
+    font-size: 16px;
+}
+
+#parceiros {
+    padding: 80px 0; 
+    background-color: white;
+    text-align: center;
+}
+
+#parceiros h2 {
+    color: #005F99;
+    font-size: 32px;
+    margin-bottom: 50px; 
+}
+
+.lista-logos {
+    display: flex;            
+    justify-content: center;   
+    align-items: center;       
+    gap: 300px;               
+    flex-wrap: wrap;        
+}
+
+.lista-logos img {
+    height: 100px;              
+    width: auto;              
+    opacity: 0.8;              
+    transition: opacity 0.3s; 
+}
+
+.lista-logos img:hover {
+    opacity: 1;               
+}
+
+footer {
+    background-color: #005F99;
+    color: white;
+    padding-top: 60px;
+    position: relative;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 100px;      
+    width: 100%;        
+    max-width: 1400px; 
+    padding-left: 50px; 
+    padding-right: 50px;
+    padding-bottom: 40px;
+}
+
+.coluna-form {
+    text-align: left;
+}
+
+.coluna-form h3 { margin-bottom: 20px; }
+
+.coluna-form input, 
+.coluna-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    margin-left: 10px;
+}
+
+.coluna-form button {
+    background-color: #00A896; 
+    color: white;         
+    border: none;            
+    padding: 12px 30px;      
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;        
+    border-radius: 50px;      
+    transition: background-color 0.3s;
+    margin-top: 10px;  
+}
+
+.coluna-form button:hover {
+    background-color: #218838; 
+    transform: scale(1.05); 
+}
+
+.coluna-info {
+    text-align: left; 
+
+}
+
+.dados-contacto { 
+    margin-bottom: 20px; 
+    margin-left: 350px;
+
+}
+.dados-contacto p { 
+    margin-bottom: 10px;
+    text-align: left;
+    width: 418px;
+    
+}
+
+.mapa-box {
+    background: #e0e0e0;
+    color: #333;
+    height: 180px;
+    width: 100%;   
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 350px;
+    
+}
+
+
+.copyright {
+    background-color: rgba(0,0,0,0.2); 
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+
+.btn-topo {
+    position: fixed; 
+    bottom: 30px;
+    right: 30px;
+    background-color: #00A896;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 2000;
+}
+
+
+@media (max-width: 768px) {
+    
+    .menu {
+        display: none; 
+    }
+    
+    
+    .hero h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+        position: static; 
+        transform: none;
+        margin-top: 0;
+    }
+    
+    .grelha-cartoes, .cartoes-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0; 
+    }
+    
+    .cartao {
+        width: 100%; 
+        max-width: 350px;
+    }
+
+    .footer-grid {
+        display: block; 
+        padding: 0 20px;
+    }
+    
+    .coluna-form, .coluna-info {
+        width: 100%;
+        text-align: center; 
+        margin-bottom: 40px;
+    }
+    
+    .mapa-box {
+        margin: 0 auto; 
+    }
+}
